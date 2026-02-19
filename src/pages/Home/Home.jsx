@@ -1,15 +1,16 @@
-import profile from "../assets/jones.jpg";
-import { featuredVideos } from "../data/videos";
-import { featuredArticles } from "../data/articles";
-import VideoCard from "../components/VideoCard";
-import ArticleCard from "../components/ArticleCard";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
+import profile from "../../assets/jones.jpg"
+import { featuredVideos } from "../../data/videos"
+import { featuredArticles } from "../../data/articles"
+import VideoCard from "../../components/VideoCard/VideoCard"
+import ArticleCard from "../../components/ArticleCard/ArticleCard"
+import "./Home.css"
 
 export default function Home() {
   return (
     <div className="home">
 
-      {/* HERO / CAPA */}
+      {/* HERO */}
       <section className="hero">
         <img src={profile} alt="profile" className="hero-avatar" />
 
@@ -24,7 +25,7 @@ export default function Home() {
         </p>
 
         <blockquote className="hero-quote">
-          “Não há nada mais burro que achar que você foi o único a ter uma boa ideia.”
+          "Não há nada mais burro que achar que você foi o único a ter uma boa ideia."
           <span>— Sócrates, provavelmente depois de beber</span>
         </blockquote>
 
@@ -37,67 +38,59 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="divider" />
+      <div className="home-divider" />
 
       {/* DESTAQUES */}
-      <section className="highlight">
+      <section className="home-highlight">
         <h2>Destaques</h2>
-        <p>
-          Conteúdos essenciais para entender o projeto e a linha de pensamento do canal.
-        </p>
+        <p>Conteúdos essenciais para entender o projeto e a linha de pensamento do canal.</p>
       </section>
 
-      {/* VIDEOS */}
-      <section className="section">
-        <div className="section-header">
+      {/* VÍDEOS */}
+      <section className="home-section">
+        <div className="home-section-header">
           <h2>Principais vídeos</h2>
           <Link to="/videos">Arquivo completo →</Link>
         </div>
-
-        <div className="video-grid">
+        <div className="home-video-grid">
           {featuredVideos.map((v, i) => (
             <VideoCard video={v} key={i} />
           ))}
         </div>
       </section>
 
-      {/* ARTICLES */}
-      <section className="section">
-        <div className="section-header">
+      {/* ARTIGOS */}
+      <section className="home-section">
+        <div className="home-section-header">
           <h2>Principais artigos</h2>
           <Link to="/articles">Ler todos →</Link>
         </div>
-
-        <div className="article-grid">
+        <div className="home-article-grid">
           {featuredArticles.map((a, i) => (
             <ArticleCard article={a} key={i} />
           ))}
         </div>
       </section>
 
-      <div className="divider" />
+      <div className="home-divider" />
 
-      {/* COMMUNITY / SUPPORT */}
-      <section className="support">
-        <div className="support-left">
+      {/* SUPPORT */}
+      <section className="home-support">
+        <div className="home-support-left">
           <h2>Apoie o projeto</h2>
-
           <p>
             O projeto é independente e financiado diretamente pela comunidade.
             Sua contribuição mantém o conteúdo livre, frequente e sem patrocinadores.
           </p>
-
-          <div className="btc-box">
-            <span className="btc-icon">₿</span>
+          <div className="home-btc-box">
+            <span className="home-btc-icon">₿</span>
             <code>bc1SEUENDERECOAQUI</code>
           </div>
-
-          <a href="https://discord.gg/mQsy9EkdqY" className="discord-btn">
+          <a href="https://discord.gg/mQsy9EkdqY" className="home-discord-btn">
             Entrar na comunidade
           </a>
         </div>
-
-        <div className="support-right">
+        <div className="home-support-right">
           <p>
             Discussões, ideias, bastidores e sugestões acontecem dentro do servidor.
             O site é o arquivo — a comunidade é onde o projeto vive.
@@ -106,5 +99,5 @@ export default function Home() {
       </section>
 
     </div>
-  );
+  )
 }

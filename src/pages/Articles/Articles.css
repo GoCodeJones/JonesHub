@@ -1,0 +1,43 @@
+/* ==================== ARTICLES PAGE ==================== */
+
+.articles-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px 100px;
+}
+
+.articles-hero {
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.articles-hero h1 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.articles-hero p {
+  margin-top: 8px;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+}

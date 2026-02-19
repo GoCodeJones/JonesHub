@@ -1,0 +1,66 @@
+/* ==================== NAVBAR ==================== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+  background: rgba(8, 8, 8, 0.75);
+  backdrop-filter: blur(16px) saturate(1.4);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 0 rgba(255, 212, 0, 0.04);
+}
+
+.logo img {
+  height: 38px;
+  display: block;
+}
+
+.nav-right {
+  display: flex;
+  gap: 4px;
+}
+
+.nav-right a {
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--yellow);
+  opacity: 0.75;
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-right a:hover {
+  opacity: 1;
+  background: rgba(255, 212, 0, 0.07);
+}
+
+.nav-right a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--yellow);
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px 16px;
+  }
+
+  .nav-right a {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+}

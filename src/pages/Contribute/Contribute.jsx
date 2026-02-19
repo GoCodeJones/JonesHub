@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./Contribute.css"
 
 const BTC_ADDRESS = "bc1SEUENDERECOAQUI"
 
@@ -72,10 +73,10 @@ export default function Contribute() {
   return (
     <section className="contribute-page">
 
-      <div className="page-hero">
-        <p className="page-eyebrow">Apoie o projeto</p>
-        <h1 className="page-title">Seja um afiliado</h1>
-        <p className="page-subtitle">
+      <div className="contribute-hero">
+        <p className="contribute-eyebrow">Apoie o projeto</p>
+        <h1 className="contribute-title">Seja um afiliado</h1>
+        <p className="contribute-subtitle">
           O conteúdo é livre, mas produzir conteúdo de qualidade tem custo.
           Se você acredita no projeto, escolha um nível e faça parte.
         </p>
