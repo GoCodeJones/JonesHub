@@ -1,7 +1,7 @@
 export const featuredArticles = [
   {
     url: "https://open.substack.com/pub/devjhonatangeronimo/p/a-liberdade-e-mediada-pela-eficiencia",
-    title: "Liberdade e eficiência"
+    title: "A liberdade é mediada pela eficiência"
   },
   {
     url: "https://devjhonatangeronimo.substack.com/p/o-principio-de-proporcionalidade",
