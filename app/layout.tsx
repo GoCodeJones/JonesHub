@@ -1,5 +1,12 @@
 import "./globals.css";
 import Link from "next/link";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
 
 export const metadata = {
   title: "JonesHub",
@@ -13,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${inter.variable} font-sans`}>
         <nav className="border-b border-[#111] p-4 flex justify-between">
           <div className="font-bold text-xl text-[#FFC400]">
             <Link href="/">JONESHUB</Link>
