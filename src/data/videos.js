@@ -1,17 +1,26 @@
 export const featuredVideos = [
   {
-    title: "Título do vídeo 1",
-    url: "https://youtube.com/watch?v=VIDEO1",
-    thumb: "https://img.youtube.com/vi/VIDEO1/hqdefault.jpg"
+    url: "https://youtu.be/e44QDvbgObQ",
+    title: "O Brasil não é pobre",
+    description: "A riqueza desperdiçada de uma nação burocrática"
   },
   {
-    title: "Título do vídeo 2",
-    url: "https://youtube.com/watch?v=VIDEO2",
-    thumb: "https://img.youtube.com/vi/VIDEO2/hqdefault.jpg"
+    url: "https://youtu.be/MWRMqAIQccc",
+    title: "O Estado contra você",
+    description: "Como o sistema cresce destruindo o indivíduo"
   },
   {
-    title: "Título do vídeo 3",
-    url: "https://youtube.com/watch?v=VIDEO3",
-    thumb: "https://img.youtube.com/vi/VIDEO3/hqdefault.jpg"
+    url: "https://youtu.be/E6zzpya2FT4",
+    title: "A mentira do bem comum",
+    description: "O coletivo usado como ferramenta de poder"
   }
-]
+];
+
+export const videos = [
+  ...featuredVideos,
+  {
+    url: "https://youtu.be/gjA082ewUYQ",
+    title: "Controle social moderno",
+    description: "A nova forma de dominação silenciosa"
+  }
+];

@@ -44,7 +44,7 @@ body {
   text-decoration: none;
   margin-left: 20px;
   font-weight: 500;
-  opacity: 0.85;
+  opacity: 1;
 }
 
 .nav-right a:hover {
@@ -87,7 +87,7 @@ body {
 .subtitle {
   max-width: 520px;
   text-align: center;
-  opacity: 0.7;
+  opacity: 1;
   margin-bottom: 26px;
 }
 
@@ -118,8 +118,8 @@ body {
 /* YOUTUBE */
 
 .youtube {
-  background: #ff0000;
-  color: white;
+  background: #ff000000;
+  color: rgb(255, 0, 0);
 }
 
 .youtube:hover {
@@ -188,7 +188,7 @@ body {
 
 .see-more {
   margin-top: 20px;
-  opacity: 0.7;
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -239,7 +239,7 @@ body {
 }
 
 .article-card p {
-  opacity: 0.7;
+  opacity: 1;
   font-size: 14px;
   line-height: 1.4;
 }
@@ -269,7 +269,7 @@ body {
 .btc-address {
   margin: 12px 0;
   word-break: break-all;
-  opacity: 0.8;
+  opacity: 1;
   font-family: monospace;
 }
 
@@ -326,7 +326,7 @@ body {
   width: 22px;
   height: 22px;
   fill: var(--yellow);
-  opacity: 0.7;
+  opacity: 1;
   transition: 0.15s;
 }
 
@@ -336,7 +336,7 @@ body {
 }
 
 .footer-text {
-  opacity: 0.5;
+  opacity: 1;
   font-size: 14px;
 }
 
@@ -423,7 +423,7 @@ a{
   width:22px;
   height:22px;
   fill:currentColor;
-  opacity:.8;
+  opacity:1;
 }
 
 .social.youtube{color:#ffffff}
@@ -462,5 +462,41 @@ a{
 }
 
 .page-hero p{
-  opacity:.7;
+  opacity:1;
+}
+
+.card-content {
+  padding: 12px 14px;
+}
+
+.card-content h3 {
+  font-size: 15px;
+  margin: 0 0 6px 0;
+}
+
+.card-content p {
+  font-size: 13px;
+  opacity: 0.75;
+  line-height: 1.3;
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 14px;
+  background: #0f1115;
+  border: 1px solid #1f232b;
+  transition: transform .12s ease, border .12s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: #ffd000;
 }

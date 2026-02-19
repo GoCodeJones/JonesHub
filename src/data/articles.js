@@ -1,17 +1,22 @@
 export const featuredArticles = [
   {
-    title: "Título do artigo 1",
-    description: "Breve descrição do artigo para atrair leitura.",
-    url: "https://seusubstack.substack.com/p/artigo1"
+    url: "https://open.substack.com/pub/devjhonatangeronimo/p/a-liberdade-e-mediada-pela-eficiencia",
+    title: "Liberdade e eficiência"
   },
   {
-    title: "Título do artigo 2",
-    description: "Breve descrição do artigo para atrair leitura.",
-    url: "https://seusubstack.substack.com/p/artigo2"
+    url: "https://devjhonatangeronimo.substack.com/p/o-principio-de-proporcionalidade",
+    title: "Princípio da proporcionalidade"
   },
   {
-    title: "Título do artigo 3",
-    description: "Breve descrição do artigo para atrair leitura.",
-    url: "https://seusubstack.substack.com/p/artigo3"
+    url: "https://devjhonatangeronimo.substack.com/p/the-epistemological-war-of-ai",
+    title: "Epistemological war of AI"
   }
-]
+];
+
+export const articles = [
+  ...featuredArticles,
+  {
+    url: "https://devjhonatangeronimo.substack.com/p/carta-de-saida",
+    title: "Carta de saída"
+  }
+];
