@@ -33,7 +33,7 @@ export default function Home() {
           <a href="https://www.youtube.com/@CanecaJones" className="social-btn yt">YouTube</a>
           <a href="https://substack.com/@jhonatangeronimo" className="social-btn sub">Substack</a>
           <a href="https://x.com/JonesHTML" className="social-btn x">X</a>
-          <a href="https://discord.gg/mQsy9EkdqY" className="social-btn discord">Discord</a>
+          <a href="https://discord.gg/s2FMQpvFGD" className="social-btn discord">Discord</a>
           <a href="https://kick.com/canecajones" className="social-btn kick">Kick</a>
         </div>
       </section>
@@ -86,7 +86,7 @@ export default function Home() {
             <span className="home-btc-icon">₿</span>
             <code>bc1SEUENDERECOAQUI</code>
           </div>
-          <a href="https://discord.gg/mQsy9EkdqY" className="home-discord-btn">
+          <a href="https://discord.gg/s2FMQpvFGD" className="home-discord-btn">
             Entrar na comunidade
           </a>
         </div>

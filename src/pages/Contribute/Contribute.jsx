@@ -118,7 +118,7 @@ export default function Contribute() {
             Pix durante a live. Seu nome aparece na tela.
             Glória instantânea por um preço acessível.
           </p>
-          <a href="#livepix" className="direct-btn direct-btn--livepix">
+          <a href="https://livepix.gg/canecajones" className="direct-btn direct-btn--livepix">
             Quero minha glória <span className="btn-arrow">→</span>
           </a>
         </div>
@@ -134,7 +134,7 @@ export default function Contribute() {
             Onde a comunidade vive, discute e manda meme
             fora de contexto às 2 da manhã. Você vai se sentir em casa.
           </p>
-          <a href="#discord" className="direct-btn direct-btn--discord">
+          <a href="https://discord.gg/s2FMQpvFGD" className="direct-btn direct-btn--discord">
             Entrar no servidor <span className="btn-arrow">→</span>
           </a>
         </div>
