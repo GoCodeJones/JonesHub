@@ -4,6 +4,7 @@ import Videos from "./pages/Videos"
 import Articles from "./pages/Articles"
 import Contribute from "./pages/Contribute"
 import { Routes, Route } from "react-router-dom"
+import './styles/theme.css'
 
 export default function App() {
   return (
