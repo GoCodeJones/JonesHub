@@ -339,3 +339,128 @@ body {
   opacity: 0.5;
   font-size: 14px;
 }
+
+/* BACKGROUND IMAGE */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("/src/assets/bg.jpg") center/cover no-repeat;
+  filter: blur(6px) brightness(0.35);
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: -1;
+}
+
+.logo img{
+  height:40px;
+}
+
+.navbar{
+  padding:10px 18px;
+}
+
+.nav-right{
+  display:flex;
+  gap:18px;
+}
+
+.nav-right a{
+  padding:6px 8px;
+  border-radius:6px;
+}
+
+.nav-right a:hover{
+  background:#1a1a1a;
+}
+
+a{
+  color:inherit;
+}
+
+.see-more{
+  display:inline-block;
+  margin-top:16px;
+  text-decoration:none;
+  padding:8px 14px;
+  border:1px solid var(--border);
+  border-radius:8px;
+}
+
+.see-more:hover{
+  border-color:var(--yellow);
+}
+
+.social-buttons{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.social-btn{
+  padding:8px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:14px;
+}
+
+.yt{background:#ff0000;color:white}
+.sub{background:#ff6719;color:white}
+.x{background:#111;color:white;border:1px solid #333}
+.discord{background:#5865F2;color:white}
+.kick{background:#53fc18;color:black}
+
+.social svg{
+  width:22px;
+  height:22px;
+  fill:currentColor;
+  opacity:.8;
+}
+
+.social.youtube{color:#ffffff}
+.social.github{color:#fff}
+.social.twitter{color:#fff}
+.social.telegram{color:#2AABEE}
+
+.social:hover svg{
+  opacity:1;
+  transform:translateY(-2px);
+}
+
+.support-box{
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:28px;
+  max-width:650px;
+}
+
+.btc-field{
+  background:white;
+  color:black;
+  padding:12px;
+  border-radius:8px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin:18px 0;
+  font-family:monospace;
+}
+
+.page-hero{
+  margin-bottom:30px;
+  padding-bottom:12px;
+  border-bottom:1px solid var(--border);
+}
+
+.page-hero p{
+  opacity:.7;
+}

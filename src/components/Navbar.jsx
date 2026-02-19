@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom"
+import logo from "../assets/logo.png"
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-left">
-        <div className="logo-placeholder">LOGO</div>
+        <Link to="/" className="logo">
+          <img src={logo} alt="logo"/>
+        </Link>
       </div>
 
       <div className="nav-right">

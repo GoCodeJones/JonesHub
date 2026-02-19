@@ -17,22 +17,16 @@ export default function Home() {
           Meu hub central de conteúdos, vídeos, artigos e comunidade.
         </p>
 
-        <div className="buttons">
-          <a href="#" className="btn youtube">
-            <svg viewBox="0 0 24 24" className="icon">
-              <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.7 31.7 0 0 0 24 12a31.7 31.7 0 0 0-.5-5.8zM9.7 15.5v-7l6.3 3.5-6.3 3.5z" />
-            </svg>
-            YouTube
-          </a>
-          <a href="#" className="btn substack">
-            <svg viewBox="0 0 24 24" className="icon">
-              <path d="M4 3h16v3H4zm0 5h16v3H4zm0 5h16v8l-8-4-8 4z" />
-            </svg>
-            Substack
-          </a>
+        <div className="social-buttons">
+          <a href="#" className="social-btn yt">YouTube</a>
+          <a href="#" className="social-btn sub">Substack</a>
+          <a href="#" className="social-btn x">X</a>
+          <a href="#" className="social-btn discord">Discord</a>
+          <a href="#" className="social-btn kick">Kick</a>
         </div>
       </div>
 
+      {/* VIDEOS */}
       <section className="section">
         <h2 className="section-title">Principais vídeos</h2>
 
@@ -47,6 +41,7 @@ export default function Home() {
         </Link>
       </section>
 
+      {/* ARTICLES */}
       <section className="section">
         <h2 className="section-title">Principais artigos</h2>
 
@@ -61,15 +56,24 @@ export default function Home() {
         </Link>
       </section>
 
+      {/* SUPPORT */}
       <section className="section">
-        <h2 className="section-title">Contribuição</h2>
+        <h2 className="section-title">Apoie</h2>
 
-        <div className="contribute-preview">
-          <p>Apoie o projeto e participe da comunidade.</p>
+        <div className="support-box">
+          <p>
+            O projeto é independente e financiado pela comunidade.
+            Seu apoio mantém os conteúdos ativos e em expansão.
+          </p>
 
-          <Link to="/contribute" className="btn outline">
-            Saiba mais
-          </Link>
+          <div className="btc-field">
+            <span>₿</span>
+            <code>bc1SEUENDERECOAQUI</code>
+          </div>
+
+          <a href="#" className="discord-btn">
+            Entrar no Discord
+          </a>
         </div>
       </section>
     </div>
